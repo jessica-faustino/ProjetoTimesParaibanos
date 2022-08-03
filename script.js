@@ -28,11 +28,12 @@ const filme2 = {
 
 const filmes = [];
 
+// SEMANA 3
 //Adicionando novos objetos no array de objetos, utilizando o push()
 
 //filmes.push(filme1,filme2,filme3,filme4);
 
-//Fazendo uma condicional antes de adiconar os objetos ao array
+//Fazendo uma condicional antes de adiconar os objetos ao array SEMANA 4
 
 if (filme1.continuacao === true){
     filmes.push(filme1);
