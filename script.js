@@ -34,7 +34,6 @@ const filme2 = {
 
 const filmes = [];
 
-
 // SEMANA 3
 //Adicionando novos objetos no array de objetos, utilizando o push()
 
@@ -75,6 +74,9 @@ else{
 
 
 console.log ("Filmes que tem continuação: ", filmes);
+
+// SEMANA 5
+// Fazendo um laço para ler o array do objeto como string
 
 let auxiliar = "";
 
