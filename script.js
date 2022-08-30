@@ -25,44 +25,79 @@ const filme2 = {
     continuacao : true,
     elenco : ["Robert Downey Jr.", "Scarlett Johansson", "Chris Evans", "Mark Ruffalo", "Chris Hemsworth", "Tom Hiddleston"]
 }
+ const filme5 = {
+    titulo: "Piratas do Caribe, a maldição do pérola negra",
+    duracao: 143,
+    continuacao: true,
+    elenco: ["Johnny Depp", "Keira Knightley", "Orlando Bloom", "Geoffrey Rush", "Kevin McNally"]
+ }
 
 const filmes = [];
+
 
 // SEMANA 3
 //Adicionando novos objetos no array de objetos, utilizando o push()
 
 //filmes.push(filme1,filme2,filme3,filme4);
 
-//Fazendo uma condicional antes de adiconar os objetos ao array SEMANA 4
+//Fazendo uma condicional antes de adicionar os objetos ao array SEMANA 4
 
 if (filme1.continuacao === true){
     filmes.push(filme1);
 }
 else {
-    console.log ("**ALERT** ",filme1);
-}
+    console.log("**ALERT** '" + filme1.titulo +"' não foi adicionado");
+}    
 if (filme2.continuacao === true){
     filmes.push(filme2)
 }
 else {
-    console.log ("**ALERT**", filme2);
+    console.log("**ALERT** '" + filme2.titulo +"' não foi adicionado");
 }
 if (filme3.continuacao === true){
     filmes.push(filme3)
 }
 else{ 
-    console.log ("**ALERT**", filme3);
+    console.log("**ALERT** '" + filme3.titulo +"' não foi adicionado");
 }
 if (filme4.continuacao=== true){
     filmes.push(filme4);
 }
 else{
-    console.log("**ALERT**", filme4)
+    console.log("**ALERT**'" + filme4.titulo +"' não foi adicionado");
 }
-console.log (filmes);
+if (filme5.continuacao=== true){
+    filmes.push(filme5);
+}
+else{
+    console.log("**ALERT**'" + filme5.titulo +"' não foi adicionado");
+}
+
+
+console.log ("Filmes que tem continuação: ", filmes);
+
+let auxiliar = "";
+
+// for(let i = 0; i < mes.lefilngth; i++){
+        
+//     for(let j = 0; j < 1; j++){
+//         auxiliar += `Elenco: ${filmes[i].elenco.toString()} \n`
+//     }
+    
+//     auxiliar += `Título: ${filmes[i].titulo} \nDuração: ${filmes[i].duracao} \nContinuação: ${filmes[i].continuacao} \n\n`
+// }
+
+for (i in filmes){
+    auxiliar += `Título: ${filmes[i].titulo} \nDuração: ${filmes[i].duracao} \nContinuação: ${filmes[i].continuacao} \n`
+    
+    for(j = 0; j < 1; j++){
+        auxiliar += `Elenco: ${filmes[i].elenco.toString()} \n\n`
+    }
+}
+
+console.log(auxiliar)
 
 /*
-
 const media = (duracao1 + duracao2 + duracao3 + duracao4)/3;
 console.log (`Duração média dos filmes ${media.toFixed(2)} minutos.`);
 
@@ -88,3 +123,13 @@ console.log (`Filme: ${filme4.toUpperCase()}
 Duração: ${duracao4}
 Tem continuação? ${continuacao4}
 Elenco: ${elenco4}`); */
+
+/* const filmes = [filme1,filme2,filme3,filme4];
+
+
+for ( const i=0; i <= filmes.length; i++) {
+    
+    console.log (filmes[i]);
+}
+
+console.log (filmes[i]) */
