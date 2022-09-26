@@ -2,42 +2,46 @@ const filme1 = {
     titulo : "As Branquelas",
     duracao : 109,
     continuacao : false, 
-    elenco : ["Shawn Wayans", "Marlon Wayans", "Maitland Ward", "Anne Dudek", "Terry Crews"]
+    elenco : ["Shawn Wayans", "Marlon Wayans", "Maitland Ward", "Anne Dudek", "Terry Crews"],
+    capa: ""
 }
 
 const filme2 = {
     titulo: "Todo mundo em pânico",
     duracao: 88,
     continuacao : true,
-    elenco : ["Anna Faris", "Shawn Wayans", "Marlon Wayans", "Shannon Elizabeth", "Regina Hall"]
+    elenco : ["Anna Faris", "Shawn Wayans", "Marlon Wayans", "Shannon Elizabeth", "Regina Hall"],
+    capa: ""
 }
 
  const filme3 = {
     titulo: "O dia em que a Terra parou",
     duracao : 104,
     continuacao : false,
-    elenco : ["Keanu Reeves", "Jennifer Connelly", "Patricia Neal", "Jaden Smith", "Jon Hamm"]
+    elenco : ["Keanu Reeves", "Jennifer Connelly", "Patricia Neal", "Jaden Smith", "Jon Hamm"],
+    capa: ""
 }
 
  const filme4 = { 
     titulo: "Vingadores",
     duracao : 143,
     continuacao : true,
-    elenco : ["Robert Downey Jr.", "Scarlett Johansson", "Chris Evans", "Mark Ruffalo", "Chris Hemsworth", "Tom Hiddleston"]
+    elenco : ["Robert Downey Jr.", "Scarlett Johansson", "Chris Evans", "Mark Ruffalo", "Chris Hemsworth", "Tom Hiddleston"],
+    capa: ""
 }
  const filme5 = {
     titulo: "Piratas do Caribe, a maldição do pérola negra",
     duracao: 143,
     continuacao: true,
-    elenco: ["Johnny Depp", "Keira Knightley", "Orlando Bloom", "Geoffrey Rush", "Kevin McNally"]
+    elenco: ["Johnny Depp", "Keira Knightley", "Orlando Bloom", "Geoffrey Rush", "Kevin McNally"],
+    capa: ""
  }
  const filme6 = {titulo: 'O Auto da Compadecida',
 duracao: 2000,
 continuacao: false,
-elenco: 'Matheus Nachtergaele, Selton Mello, Marco Nanini, Rogério Cardoso, Diogo Villela, Denise Fraga, Lima Duarte, Luís Melo,Fernanda Montenegro'
+elenco: 'Matheus Nachtergaele, Selton Mello, Marco Nanini, Rogério Cardoso, Diogo Villela, Denise Fraga, Lima Duarte, Luís Melo,Fernanda Montenegro',
+capa: ""
 }
-
- 
 
 const filmes = [];
 
@@ -108,7 +112,7 @@ for (i in filmes){
 //console.log(auxiliar)
 
 const todosOsFilmes = [];
-todosOsFilmes.push(filme1,filme2,filme3,filme4,filme5)
+todosOsFilmes.push(filme1,filme2,filme3,filme4,filme5,filme6)
 
 //console.log (todosOsFilmes)
 
@@ -146,7 +150,7 @@ imprimeStringObjeto(filmes);
 
 //criar função com dois parametros, array de objetos e string
 //função retorna objeto
-//objeto precisa ter vaLor igual ao parametro passado como string //USAR FILTER?
+//objeto precisa ter vaLor igual ao parametro passado como string 
 //caso não tenha valor igual ao parametro, rodar alerta
 
 function arrayString(arrayDeObjetos, nomeDoFilme){
@@ -162,10 +166,10 @@ function arrayString(arrayDeObjetos, nomeDoFilme){
 
 const nomeDoFilme = prompt("Digite aqui um filme dos Studios Ghibli:");
 
-console.log(arrayString (filmes, nomeDoFilme))
+console.log(arrayString (todosOsFilmes, nomeDoFilme))
 
-// let filtroFilmes = arrayString(filmes, nomeDoFilme)
-// imprimeStringObjeto(filtroFilmes)
+let filtroFilmes = arrayString(todosOsFilmes, nomeDoFilme)
+imprimeStringObjeto(filtroFilmes);
 
 
 
