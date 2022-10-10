@@ -164,7 +164,7 @@ function arrayString(arrayDeObjetos, nomeDoFilme){
     }
 }
 
-const nomeDoFilme = prompt("Digite aqui um filme dos Studios Ghibli:");
+const nomeDoFilme = prompt("Digite aqui um filme:");
 
 console.log(arrayString (todosOsFilmes, nomeDoFilme))
 
