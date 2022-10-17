@@ -1,133 +1,34 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Lista de Filmes</title>
-    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futebol Paraibano</title>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
-        <h1 id="titulo-pagina">Lista de Filmes </h1>
+        <h1 >Futebol Paraibano 2022 </h1>
     </header>
     <main>
+    <div>
+        <section class="pesquisa">
+            <form>
+            <input id="input" class="input" value="" placeholder="Pesquise aqui" name="Pesquiar" type="text">
+            <label for="text"></label>
+            <button onclick="busca(event)" class="botaoPesquisa">Buscar</button>
+            </form>
+        </section>
+    </div>
+    
+    <section class="container">
+        <ul class="suaLista" style="list-style: none;">
 
-        <div>
-            <section class="pesquisa">
-                <input>
-                <button>Clique aqui</button>
-            </section>
-        </div>
-        <div>
-            <section class="container">
-                <ul style="list-style: none;">
-                    <article class="item">
-                        <li>
-                            <a href="https://pt.wikipedia.org/wiki/White_Chicks">
-                                <h3>"As Branquelas"</h3>
-                            </a> <br>
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6sWLqgnnMjPyRNfkk2YUCc8Q7hUs9D5n5rTjhXFCE5tLQwQhq"
-                                width="25%" alt="Capa do filme"><br>
-                            Duração : 109 minutos <br>
-                            Possui continuação : Não <br>
-                            Elenco: Shawn Wayans, Marlon Wayans, Maitland Ward, Anne Dudek, Terry Crews <br>
-                            Sinopse: Dois irmãos agentes do FBI, Marcus e Kevin Copeland, acidentalmente evitam que
-                            bandidos sejam presos em uma apreensão de drogas. Como castigo, eles são forçados a escoltar
-                            um par de socialites nos Hamptons. Porém, quando as meninas descobrem o plano da agência, se
-                            recusam a ir. Sem opções, Marcus e Kevin decidem posar como as irmãs, transformando-se de
-                            homens afro-americanos em um par de loiras. <br><br>
-                        </li>
-                    </article>
-
-                    <article class="item">
-                        <li> <a href="https://pt.wikipedia.org/wiki/Scary_Movie">
-                                <h3>"Todo mundo em pânico"</h3>
-                            </a><br>
-                            <img src="https://br.web.img3.acsta.net/medias/nmedia/18/87/28/03/19873867.jpg" width="25%"
-                                alt="Campa do filme"> <br>
-                            Duração: 88 minutos <br>
-                            Continuação : Sim <br>
-                            Elenco : Anna Faris, Shawn Wayans, Marlon Wayans, Shannon Elizabeth, Regina Hall <br>
-                            Sinopse: Depois do assassinato de uma bela colega de classe, um grupo de adolescentes
-                            desorientados descobre que há um assassino entre eles. A heroína Cindy Campbell e a sua
-                            turma de amigos tentam se proteger do perigo, mas Gail Hailstorm, uma repórter irritante,
-                            simplesmente não os deixa em paz.<br><br>
-                        </li>
-                    </article>
-
-                    <article class="item">
-                        <li><a href="https://pt.wikipedia.org/wiki/O_Dia_em_que_a_Terra_Parou_(2008)">
-                                <h3>"O dia em que a Terra parou" </h3>
-                            </a><br>
-                            <img src="https://br.web.img3.acsta.net/medias/nmedia/18/87/01/20/19871084.jpg" width="25%"
-                                alt="Capa do filme"><br>
-                            Duração : 104 minutos <br>
-                            Continuação : Não <br>
-                            Elenco : Keanu Reeves, Jennifer Connelly, Patricia Neal, Jaden Smith, Jon Hamm <br>
-                            Sinopse: Um alienígena chamado Klaatu atravessa o universo para chegar à Terra e avisar os
-                            humanos sobre uma crise global que está por vir. Ele encontra a renomada cientista Dra.
-                            Helen Benson, que, juntamente com seu filho Jacob, deve proteger o alienígena amigo da
-                            Terra. <br><br>
-                        </li>
-                    </article>
-
-                    <article class="item">
-                        <li><a href="https://pt.wikipedia.org/wiki/Vingadores">
-                                <h3>"Os Vingadores – The Avengers"</h3>
-                            </a><br>
-                            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmkXsIZ89RVeyZkI_v3cLLB4MFd-KlVNXub-M16petJKffpZiw"
-                                width="25%" alt="Capa do filme"><br>
-                            Duração : 143 minutos <br>
-                            Continuação : Sim <br>
-                            Elenco : Robert Downey Jr., Scarlett Johansson, Chris Evans, Mark Ruffalo, Chris Hemsworth,
-                            Tom Hiddleston <br>
-                            Sinopse: Loki, o irmão de Thor, ganha acesso ao poder ilimitado do cubo cósmico ao roubá-lo
-                            de dentro das instalações da S.H.I.E.L.D. Nick Fury, o diretor desta agência internacional
-                            que mantém a paz, logo reúne os únicos super-heróis que serão capazes de defender a Terra de
-                            ameaças sem precedentes. Homem de Ferro, Capitão América, Hulk, Thor, Viúva Negra e Gavião
-                            Arqueiro formam o time dos sonhos de Fury, mas eles precisam aprender a colocar os egos de
-                            lado e agir como um grupo em prol da humanidade. <br><br>
-                        </li>
-                    </article>
-
-                    <article class="item">
-                        <li> <a href="https://pt.wikipedia.org/wiki/Pirates_of_the_Caribbean_(s%C3%A9rie_de_filmes)">
-                                <h3>"Piratas do Caribe, a maldição do pérola negra" <h3></h3>
-                            </a><br>
-                            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvMYX13i4GzSEzDGhNKaLu-eu7zRcScx_BjTDK2gvvwRkRcqWz"
-                                width="25%" alt="Capa do filme"><br>
-                            Duração: 143 minutos <br>
-                            Continuação: Sim <br>
-                            Elenco: Johnny Depp, Keira Knightley, Orlando Bloom, Geoffrey Rush, Kevin McNally <br>
-                            Sinopse: O pirata Jack Sparrow tem seu navio saqueado e roubado pelo capitão Barbossa e sua
-                            tripulação. Com o navio de Sparrow, Barbossa invade a cidade de Port Royal, levando consigo
-                            Elizabeth Swann, filha do governador. Para recuperar sua embarcação, Sparrow recebe a ajuda
-                            de Will Turner, um grande amigo de Elizabeth. Eles desbravam os mares em direção à
-                            misteriosa Ilha da Morte, tentando impedir que os piratas-esqueleto derramem o sangue de
-                            Elizabeth para desfazer a maldição que os assola.<br><br>
-                        </li>
-                    </article>
-
-                    <article class="item">
-                        <li><a href="https://pt.wikipedia.org/wiki/O_Auto_da_Compadecida_(filme)">
-                                <h3>"O Auto da Compadecida"</h3>
-                            </a><br>
-                            <img src="https://upload.wikimedia.org/wikipedia/pt/b/bf/O_auto_da_compadecida.jpg"
-                                width="25%" alt="Capa do filme"><br>
-                            Duração: 200 minutos <br>
-                            Continuação: Não <br>
-                            Elenco: Matheus Nachtergaele, Selton Mello, Marco Nanini, Rogério Cardoso, Diogo Villela,
-                            Denise Fraga, Lima Duarte, Luís Melo,Fernanda Montenegro <br>
-                            Sinopse: As aventuras de João Grilo e Chicó, dois nordestinos pobres que vivem de golpes
-                            para sobreviver. Eles estão sempre enganando o povo de um pequeno vilarejo, inclusive o
-                            temido cangaceiro Severino de Aracaju, que os persegue pela região. <br><br>
-                        </li>
-                    </article>
-
-                </ul>
-        </div>
+    
+        </ul>
+    </section>
     </main>
     <footer>
         <span>Jéssica Faustino <br>
@@ -136,5 +37,4 @@
 
     </footer>
 </body>
-
 </html>
