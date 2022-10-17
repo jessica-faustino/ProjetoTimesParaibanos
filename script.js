@@ -51,7 +51,7 @@ const time5 = {
     link: "https://www.instagram.com/sousa_ec",
     hino: "./Hinos/03 Hino (Versão Original).mp3",
     historia: "<b>História:</b>Fundado em 10 de julho de 1991 (mesmo dia do aniversário da cidade de Sousa), o clube começou a competir profissionalmente na Série B estadual do mesmo ano, sagrando-se campeão do certame. "
-}
+} 
 const time6 = {
     titulo: "ATLÉTICO DE CAJAZEIRAS",
     fundacao: 2000,
